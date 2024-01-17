@@ -1,0 +1,112 @@
+<select id="SpeedGrader-Options">
+    <option selected value="SPEEDGRADER">SpeedGrader</option>
+</select>
+<hr />
+
+<h2>Assignment Name</h2>
+
+<input type="text" placeholder="Enter assignment name" value="A1 - ENV + HTML" title="edit-assignment" />
+
+<br />
+<br />
+
+<div>
+    <label for="points">Points</label>
+</div>
+<div>
+    <input type="text" id="points" placeholder="Enter points" />
+</div>
+
+<br />
+
+<div>
+    <label for="Assignment-Group">Assignment Group</label>
+</div>
+<div>
+    <select id="Assignment-Group">
+        <option selected value="ASSIGNMENT-GROUP">ASSIGNMENTS</option>
+    </select>
+</div>
+
+<br />
+
+<div>
+    <label for="Display-Grade">Display Grade as</label>
+</div>
+<div>
+    <select id="Display-Grade">
+        <option selected value="DISPLAY-GRADE">Percentage</option>
+    </select>
+</div>
+
+<br />
+<div>
+    <label for="Submission-Type">Submission Type</label>
+</div>
+<div>
+    <select id="Submission-Type">
+        <option selected value="SUBMISSION">Online</option>
+    </select>
+</div>
+
+<br />
+
+<div>
+    <label>Online Entry Options</label>
+</div>
+<div>
+    <input type="checkbox" id="Text-Entry" name="entry-option" value="Text-Entry">
+    <label for="Text-Entry">Text Entry</label>
+</div>
+<div>
+    <input type="checkbox" id="Website-URL" name="entry-option" value="Website-URL">
+    <label for="Website-URL">Website URL</label>
+</div>
+<div>
+    <input type="checkbox" id="Media-Recordings" name="entry-option" value="Media-Recordings">
+    <label for="Media-Recordings">Media Recordings</label>
+</div>
+<div>
+    <input type="checkbox" id="Student-Accomodations" name="entry-option" value="Student-Accomodations">
+    <label for="Student-Accomodations">Student Accomodations</label>
+</div>
+<div>
+    <input type="checkbox" id="File-Uploads" name="entry-option" value="File-Uploads">
+    <label for="File-Uploads">File Uploads</label>
+</div>
+
+<br />
+<br />
+<label for="assign">Assign</label>
+<br />
+<label for="assign">Assign To</label>
+<br />
+<div>
+    <input type="text" id="assign-value" placeholder="Enter who to assign to" value ="Everyone" />
+</div>
+
+
+<br />
+<label for="due-calendar">Due</label>
+<br />
+<div>
+    <input type="date" id="due-calendar" placeholder="Select a date" value="2021-01-01" />
+</div>
+
+<br />
+<label for="available-calendar">Available from</label>
+<br />
+<div>
+    <input type="date" id="available-calendar" placeholder="Select a date" value="2021-01-01" />
+</div>
+
+<br />
+<label for="until-calendar">Available from</label>
+<br />
+<div>
+    <input type="date" id="until-calendar" placeholder="Select a date" value="2021-01-01" />
+</div>
+
+<br/>
+<button onclick="window.location.href='/Kanbas/Courses/Assignments/'">Cancel</button>
+<button onclick="window.location.href='/Kanbas/Courses/Assignments/'">Save</button>
