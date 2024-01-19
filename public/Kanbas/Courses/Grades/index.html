@@ -10,7 +10,6 @@
 <input type="text" placeholder="Search Students" title="tooltip" />
 <h2>Assignment Names</h2>
 <input type="text" placeholder="Search Assignments" title="tooltip" />
-<!-- TODO: New line for button, hopefully can resolve with javascript in the future -->
 <br />
 <br />
 <button type="button">Apply Filters</button>
@@ -21,16 +20,10 @@
     <thead>
         <tr>
             <th rowspan="2">Student Name</th>
-            <th>A1 SETUP</th>
-            <th>A2 HTML</th>
-            <th>A3 CSS</th>
-            <th>A4 Bootstrap</th>
-            <tr>
-                <th>Out of 100</th>
-                <th>Out of 100</th>
-                <th>Out of 100</th>
-                <th>Out of 100</th>
-                </tr>
+            <th>A1 SETUP <br /> Out of 100</th>
+            <th>A2 HTML <br /> Out of 100</th>
+            <th>A3 CSS <br /> Out of 100</th>
+            <th>A4 Bootstrap <br /> Out of 100</th>
         </tr>
     </thead>
     <tbody>
@@ -50,7 +43,7 @@
         </tr>
         <tr>
             <td>Luke Skywalker</td>
-            <td align="center"><input type="number" value="99" title="grade"></td>
+            <td align="center"><input value="99" title="grade" style="text-align: center;"></td>
             <td align="center">88</td>
             <td align="center">97</td>
             <td align="center">82</td>
@@ -58,7 +51,7 @@
         <tr>
             <td>Han Solo</td>
             <td align="center">98</td>
-            <td align="center">80</td>
+            <td align="center"><input value="80" title="grade" style="text-align: center;"></td>
             <td align="center">87</td>
             <td align="center">86</td>
         </tr>
