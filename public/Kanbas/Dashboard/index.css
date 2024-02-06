@@ -15,7 +15,8 @@
     overflow: hidden;
     text-overflow: ellipsis;
     max-width: 300px;
-
+    margin-top: 40px;
+    
 }
 
 .card-title {

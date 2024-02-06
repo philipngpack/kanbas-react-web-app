@@ -40,9 +40,10 @@
 }
 
 .button-select {
-  background-color: #fd0d51;
+  background-color: firebrick;
   border: none;
   color: white;
+  padding: 5px 5px;
 }
 
 .course-status-button {
@@ -52,4 +53,9 @@
 
 .red-link {
   color: #fd0d51;
+}
+
+.button-views {
+  color: darkslategray;
+  padding: 5px 5px;
 }
