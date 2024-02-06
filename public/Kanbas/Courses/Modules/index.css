@@ -44,3 +44,12 @@
   border: none;
   color: white;
 }
+
+.course-status-button {
+  width: 250px;
+  text-align: left;
+}
+
+.red-link {
+  color: #fd0d51;
+}
