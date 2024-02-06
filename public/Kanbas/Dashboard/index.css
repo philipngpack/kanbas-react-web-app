@@ -1,0 +1,39 @@
+.fa-file-pen {
+    color: grey;
+    font-size: 20px;
+}
+.card-img-top {
+    height: 150px;
+    width: 274px;
+    object-fit: cover;
+
+}
+
+.card {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 300px;
+    
+}
+
+.card-title {
+    text-decoration: none;
+    color: grey;
+    font-weight: bold;
+}
+
+.card-text {
+    color: grey;
+    font-size: 14px;
+    margin: 0;
+}
+
+.card-term-text {
+    color: grey;
+    font-size: 12px;
+}
+
+.card-img-top {
+    max-height: 150px
+}
