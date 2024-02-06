@@ -1,26 +1,30 @@
 .wd-navigation {
     background-color: white;
     list-style: none;
-    padding: 0px;
+    padding: 0;
     width: 125px;
-    margin: 0px;
+    margin: 0;
     margin-left: 20px;
-  }
-  .wd-navigation li {
-    padding-left: 10px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  .wd-navigation li.wd-active {
+}
+
+.wd-navigation li {
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.wd-navigation li.wd-active {
     border-left: 2px solid black;
-  }
-  .wd-navigation li.wd-active a {
+}
+
+.wd-navigation li.wd-active a {
     color: black;
-  }
-  .wd-navigation a {
+}
+
+.wd-navigation a {
     color: red;
     text-decoration: none;
-  }
-  
+}
+
+.wd-navigation li a:hover {
+    text-decoration: underline;
+}
