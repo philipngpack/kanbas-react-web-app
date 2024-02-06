@@ -272,7 +272,7 @@ p#id-selector-2 {
     width: 75px;
 }
 
-.btn-primary .override-bs {
+.override-bs {
     background-color : #a90dfd;
     border-color : #fd0d51;
     border-width : 10px;
