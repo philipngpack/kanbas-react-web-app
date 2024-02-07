@@ -2,15 +2,96 @@
 
 <head>
     <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
-    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/all.css" />
     <link rel="stylesheet" href="/Kanbas/styles.css" />
     <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
     <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
     <link rel="stylesheet" href="/Kanbas/Courses/Home/index.css" />
     <link rel="stylesheet" href="/Kanbas/Courses/Modules/index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
+    <!-- Mobile Small View -->
+    <div class="d-flex flex-column">
+        <div class="d-md-none bg-dark text-white py-4">
+            <div class="container-fluid d-flex justify-content-between align-items-center">
+                <button type="button" class="btn text-white" data-bs-toggle="collapse"
+                    data-bs-target="#kanbas-nav-collapse">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <span>CS4550.12631.202410</span>
+                <button type="button" class="btn text-white" data-bs-toggle="collapse"
+                    data-bs-target="#course-nav-collapse">
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Collapsable Kanbas Nav -->
+        <div class="collapse" id="kanbas-nav-collapse">
+            <div class="card card-body">
+                <ul class="wd-navbar">
+                    <li>
+                        <a href="/Kanbas/Dashboard/screen.html" class="red-link">
+                            <i class="fa fa-tachometer kanbas-navbar-icon"></i> Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="/Kanbas/Account/Profile/screen.html" class="red-link">
+                            <span>
+                                <i class="fa fa-user-circle" aria-hidden="true"></i>
+                            </span> Account
+                        </a>
+                    </li>
+                    <li><a href="/Kanbas/Courses/Home/screen.html" class="red-link">
+                            <i class="fa fa-book" aria-hidden="true"></i> Courses</a>
+                    </li>
+                    <li><a href="#" class="red-link">
+                            <span><i class="fa fa-calendar"></i></span> Calendar</a></li>
+                    <li><a href="#" class="red-link"><i class="fa fa-inbox" aria-hidden="true"></i>
+                            Inbox</a></li>
+                    <li><a href="#" class="red-link"><i class="fa fa-desktop" aria-hidden="true"></i>
+                            Studio</a>
+                    </li>
+                    <li><a href="#" class="red-link"><i class="fa fa-share-square"
+                                aria-hidden="true"></i>
+                            Commons</a></li>
+                    <li><a href="#" class="red-link"><i class="fa fa-history "
+                                aria-hidden="true"></i> History</a></li>
+                    <li><a href="#" class="red-link"><i class="fa fa-question-circle "
+                                aria-hidden="true"></i>
+                            Help</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Collapsable Course Nav -->
+        <div class="collapse" id="course-nav-collapse">
+            <div class="card card-body">
+                <ul class="wd-course-navbar">
+                    <li><a href="/Kanbas/Courses/Home/screen.html" class="red-link"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+                    <li><a href="/Kanbas/Courses/Modules/screen.html" class="red-link"><i class="fa fa-list" aria-hidden="true"></i> Modules</a></li>
+                    <li><a href="http://piazza.com" class="red-link"><i class="fa fa-comments" aria-hidden="true"></i> Piazza</a></li>
+                    <li><a href="#" class="red-link"><i class="fa fa-video-camera" aria-hidden="true"></i> Zoom Meetings</a></li>
+                    <li><a href="/Kanbas/Courses/Assignments/screen.html" class="red-link"><i class="fa fa-file-code" aria-hidden="true"></i> Assignments</a></li>
+                    <li><a href="#" class="red-link"><i class="fa fa-question" aria-hidden="true"></i> Quizzes</a></li>
+                    <li><a href="/Kanbas/Courses/Grades/screen.html" class="red-link"><i class="fa fa-sticky-note" aria-hidden="true"></i> Grades</a></li>
+                    <li><a href="#" class="red-link"><i class="fa fa-users" aria-hidden="true"></i> People</a></li>
+                    <li><a href="#" class="red-link"><i class="fa fa-video-camera" aria-hidden="true"></i> Panopto Video</a></li>
+                    <li><a href="#" class="red-link"><i class="fa fa-comments" aria-hidden="true"></i> Discussions</a></li>
+                    <li><a href="#" class="red-link"><i class="fa fa-bullhorn" aria-hidden="true"></i> Announcements</a></li>
+                    <li><a href="#" class="red-link"><i class="fa fa-file" aria-hidden="true"></i> Pages</a></li>
+                    <li><a href="#" class="red-link"><i class="fa fa-folder" aria-hidden="true"></i> Files</a></li>
+                    <li><a href="#" class="red-link"><i class="fa fa-check-square" aria-hidden="true"></i> Rubrics</a></li>
+                    <li><a href="#" class="red-link"><i class="fa fa-line-chart" aria-hidden="true"></i> Outcomes</a></li>
+                    <li><a href="#" class="red-link"><i class="fa fa-users" aria-hidden="true"></i> Collaborations</a></li>
+                    <li><a href="#" class="red-link"><i class="fa fa-file-text" aria-hidden="true"></i> Syllabus</a></li>
+                    <li><a href="#" class="red-link"><i class="fa fa-bar-chart" aria-hidden="true"></i> Progress Reports</a></li>
+                    <li><a href="#" class="red-link"><i class="fa fa-cog" aria-hidden="true"></i> Settings</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <div class="d-flex">
         <div class="d-none d-md-block">
             <ul class="wd-kanbas-navigation">
@@ -20,13 +101,15 @@
                     <ul class="wd-kanbas-navigation">
                         <li><a href="http://northeastern.edu"><img src="../../../images/nulogo.png" alt="N"
                                     class="logo"></a></li>
-                        <li><a href="/Kanbas/Account/Profile/screen.html"><i class="fa fa-circle-user" style="color: grey;"></i> Account</a>
+                        <li><a href="/Kanbas/Account/Profile/screen.html"><i class="fa fa-circle-user"
+                                    style="color: grey;"></i> Account</a>
                         </li>
                         <li>
                             <a href="/Kanbas/Dashboard/screen.html">
                                 <i class="fa fa-tachometer"></i> Dashboard</a>
                         </li>
-                        <li class="wd-active"><a href="/Kanbas/Courses/Home/screen.html"><i class="fa fa-book"></i> Courses</a></li>
+                        <li class="wd-active"><a href="/Kanbas/Courses/Home/screen.html"><i class="fa fa-book"></i>
+                                Courses</a></li>
                         <li><a href="#"><i class="fa fa-calendar"></i> Calendar</a></li>
                         <li><a href="#"><i class="fa fa-inbox"></i> Inbox</a></li>
                         <li><a href="#"><i class="fa fa-history"></i> History</a></li>
@@ -37,6 +120,7 @@
                 </body>
             </ul>
         </div>
+
         <div class="d-none d-md-block">
             <ul class="wd-navigation">
                 <!-- Course Navigation -->
@@ -61,6 +145,7 @@
                 </body>
             </ul>
         </div>
+
         <div class="flex-fill">
             <ul class="list-group wd-modules">
                 <!-- Course Home -->
@@ -283,12 +368,13 @@
 
             </ul>
         </div>
+
         <div class="flex-grow-0 me-2 d-none d-lg-block" style="width: 250px">
             <h3>Course Status</h3>
             <!-- Implement Course Status here -->
 
             <button type="button" class="button-grey">
-                <i class="fa fa-minus-circle" ></i> Unpublish
+                <i class="fa fa-minus-circle"></i> Unpublish
             </button>
             <button type="button" class="button-green" style="opacity: 0.5; margin-bottom: 10px">
                 <i class="fa fa-check-circle"></i> Published
@@ -316,7 +402,7 @@
                 <i class="fa fa-bell"></i> View Course Notification
             </button>
 
-            
+
             <h5 style="font-weight: bold;">To Do</h5>
             <hr />
             <a href="#" class="red-link"><i class="fa fa-exclamation-circle"></i>
@@ -325,8 +411,8 @@
             <div style="margin-bottom: 30px"></div>
 
             <h5 style="font-weight: bold;">Coming Up</h5>
-            <a href="#" class ="red-link"><i class="fa fa-calendar"></i> View Calendar</a>
-            <br/>
+            <a href="#" class="red-link"><i class="fa fa-calendar"></i> View Calendar</a>
+            <br />
             <hr />
             <a href="#" class="red-link">
                 <i class="fa fa-calendar"></i> Lecture<br /></a>
@@ -346,6 +432,7 @@
             <a href="#" class="red-link">12 more in the next week...</a>
         </div>
     </div>
+
 </body>
 
 </html>
