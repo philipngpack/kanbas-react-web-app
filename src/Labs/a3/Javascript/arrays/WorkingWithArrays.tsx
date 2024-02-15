@@ -1,5 +1,7 @@
 import ArrayIndexAndLength from "../arrays/ArrayIndexAndLength";
 import AddingAndRemovingDataToFromArrays from "../arrays/AddingAndRemovingDataToFromArrays";
+import ForLoops from "../arrays/ForLoops";
+import MapFunction from "./MapFunction";
 
 function WorkingWithArrays() {
     var functionScoped = 2;
@@ -17,6 +19,8 @@ function WorkingWithArrays() {
             variableAray = {variableAray}<br />
             <ArrayIndexAndLength />
             <AddingAndRemovingDataToFromArrays />
+            <ForLoops />
+            <MapFunction />
         </div>
     );
 }
