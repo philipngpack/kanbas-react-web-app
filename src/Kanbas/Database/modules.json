@@ -1,0 +1,268 @@
+[
+    {
+        "_id": "CS4550",
+        "name": "Web Development",
+        "description": "Introduction to web development and building web applications.",
+        "course": "CS4550",
+        "lessons": [
+            {
+                "_id": "L101",
+                "name": "History of Web Development",
+                "description": "A brief history of web development and its evolution.",
+                "module": "M101"
+            },
+            {
+                "_id": "L102",
+                "name": "Web Development Fundamentals",
+                "description": "Basic principles and concepts of web development.",
+                "module": "M102"
+            },
+            {
+                "_id": "L103",
+                "name": "Web Application Development",
+                "description": "Overview of building web applications and their component.",
+                "module": "M103"
+            },
+            {
+                "_id": "L104",
+                "name": "Front-end Development",
+                "description": "Introduction to front-end development technologies and frameworks.",
+                "module": "M104"
+            },
+            {
+                "_id": "L105",
+                "name": "Back-end Development",
+                "description": "Introduction to back-end development technologies and frameworks.",
+                "module": "M105"
+            }
+        ]
+    },
+    {
+        "_id": "CS4560",
+        "name": "Database Systems",
+        "description": "Introduction to database systems and data management.",
+        "course": "CS4560",
+        "lessons": [
+            {
+                "_id": "L201",
+                "name": "Introduction to Databases",
+                "description": "Overview of database systems and their importance.",
+                "module": "M201"
+            },
+            {
+                "_id": "L202",
+                "name": "Relational Database Management Systems",
+                "description": "Introduction to relational database management systems (RDBMS).",
+                "module": "M202"
+            },
+            {
+                "_id": "L203",
+                "name": "Database Design",
+                "description": "Principles and techniques for designing databases.",
+                "module": "M203"
+            },
+            {
+                "_id": "L204",
+                "name": "SQL Fundamentals",
+                "description": "Basic concepts and syntax of Structured Query Language (SQL).",
+                "module": "M204"
+            },
+            {
+                "_id": "L205",
+                "name": "Database Administration",
+                "description": "Managing and maintaining database systems.",
+                "module": "M205"
+            }
+        ]
+    },
+    {
+        "_id": "CS4570",
+        "name": "Software Engineering",
+        "description": "Introduction to software engineering principles and practices.",
+        "course": "CS4570",
+        "lessons": [
+            {
+                "_id": "L301",
+                "name": "Software Development Life Cycle",
+                "description": "Overview of the software development life cycle and its phases.",
+                "module": "M301"
+            },
+            {
+                "_id": "L302",
+                "name": "Requirements Engineering",
+                "description": "Gathering, analyzing, and documenting software requirements.",
+                "module": "M302"
+            },
+            {
+                "_id": "L303",
+                "name": "Software Design",
+                "description": "Principles and techniques for designing software systems.",
+                "module": "M303"
+            },
+            {
+                "_id": "L304",
+                "name": "Software Testing",
+                "description": "Methods and strategies for testing software applications.",
+                "module": "M304"
+            },
+            {
+                "_id": "L305",
+                "name": "Software Maintenance",
+                "description": "Managing and maintaining software systems.",
+                "module": "M305"
+            }
+        ]
+    },
+    {
+        "_id": "CS4580",
+        "name": "Artificial Intelligence",
+        "description": "Introduction to artificial intelligence and its applications.",
+        "course": "CS4580",
+        "lessons": [
+            {
+                "_id": "L401",
+                "name": "Introduction to AI",
+                "description": "Overview of artificial intelligence and its history.",
+                "module": "M401"
+            },
+            {
+                "_id": "L402",
+                "name": "Search Algorithms",
+                "description": "Techniques for searching and finding solutions in AI.",
+                "module": "M402"
+            },
+            {
+                "_id": "L403",
+                "name": "Machine Learning",
+                "description": "Introduction to machine learning algorithms and models.",
+                "module": "M403"
+            },
+            {
+                "_id": "L404",
+                "name": "Natural Language Processing",
+                "description": "Processing and understanding human language in AI.",
+                "module": "M404"
+            },
+            {
+                "_id": "L405",
+                "name": "Computer Vision",
+                "description": "Techniques for analyzing and understanding visual data in AI.",
+                "module": "M405"
+            }
+        ]
+    },
+    {
+        "_id": "CS4590",
+        "name": "Mobile Development",
+        "description": "Introduction to mobile app development for various platforms.",
+        "course": "CS4590",
+        "lessons": [
+            {
+                "_id": "L501",
+                "name": "Introduction to Mobile Development",
+                "description": "Overview of mobile app development and its platforms.",
+                "module": "M501"
+            },
+            {
+                "_id": "L502",
+                "name": "Android Development",
+                "description": "Building Android applications using Java or Kotlin.",
+                "module": "M502"
+            },
+            {
+                "_id": "L503",
+                "name": "iOS Development",
+                "description": "Building iOS applications using Swift or Objective-C.",
+                "module": "M503"
+            },
+            {
+                "_id": "L504",
+                "name": "Cross-Platform Development",
+                "description": "Building mobile apps that work on multiple platforms using frameworks like React Native or Flutter.",
+                "module": "M504"
+            },
+            {
+                "_id": "L505",
+                "name": "Mobile App Testing",
+                "description": "Methods and strategies for testing mobile applications.",
+                "module": "M505"
+            }
+        ]
+    },
+    {
+        "_id": "CS4600",
+        "name": "Operating Systems",
+        "description": "Introduction to operating systems and their components.",
+        "course": "CS4600",
+        "lessons": [
+            {
+                "_id": "L601",
+                "name": "Introduction to Operating Systems",
+                "description": "Overview of operating systems and their functions.",
+                "module": "M601"
+            },
+            {
+                "_id": "L602",
+                "name": "Process Management",
+                "description": "Managing processes and their execution in an operating system.",
+                "module": "M602"
+            },
+            {
+                "_id": "L603",
+                "name": "Memory Management",
+                "description": "Managing memory resources in an operating system.",
+                "module": "M603"
+            },
+            {
+                "_id": "L604",
+                "name": "File Systems",
+                "description": "Managing file storage and organization in an operating system.",
+                "module": "M604"
+            },
+            {
+                "_id": "L605",
+                "name": "Concurrency and Synchronization",
+                "description": "Managing concurrent processes and synchronization in an operating system.",
+                "module": "M605"
+            }
+        ]
+    },
+    {
+        "_id": "CS4610",
+        "name": "Computer Networks",
+        "description": "Introduction to computer networks and their protocols.",
+        "course": "CS4610",
+        "lessons": [
+            {
+                "_id": "L701",
+                "name": "Introduction to Computer Networks",
+                "description": "Overview of computer networks and their components.",
+                "module": "M701"
+            },
+            {
+                "_id": "L702",
+                "name": "Network Protocols",
+                "description": "Understanding network protocols and their functions.",
+                "module": "M702"
+            },
+            {
+                "_id": "L703",
+                "name": "Network Security",
+                "description": "Securing computer networks and preventing unauthorized access.",
+                "module": "M703"
+            },
+            {
+                "_id": "L704",
+                "name": "Wireless Networks",
+                "description": "Understanding wireless networks and their technologies.",
+                "module": "M704"
+            },
+            {
+                "_id": "L705",
+                "name": "Network Administration",
+                "description": "Managing and maintaining computer networks.",
+                "module": "M705"
+            }
+        ]
+    }
+]

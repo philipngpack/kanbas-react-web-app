@@ -23,12 +23,12 @@
 .wd-navigation a {
     color: rgb(200, 30, 30);
     text-decoration: none;
-    font-style: italic; /* Added property */
 }
 
 .wd-navigation li a:hover {
     text-decoration: underline;
 }
+
 .term-text {
     font-style: italic; 
     margin-left: 20px;
