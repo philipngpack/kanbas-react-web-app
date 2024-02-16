@@ -1,0 +1,12 @@
+.minibar {
+    margin: -5px 0px 0px 20px;
+    color: rgb(200, 30, 30);
+    font-size: 30px;
+}
+
+.course-title {
+    font-weight: normal;
+    color: rgb(200, 30, 30);
+    font-size: 20px;
+    
+}

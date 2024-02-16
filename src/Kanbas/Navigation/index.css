@@ -18,7 +18,7 @@
 }
 
 .wd-kanbas-navigation li.wd-active a {
-    color: red;
+    color: rgb(200, 30, 30);
 }
 
 .wd-kanbas-navigation a {
@@ -27,7 +27,7 @@
 }
 
 .wd-kanbas-navigation a i {
-    color: red;
+    color: rgb(200, 30, 30);
     font-size: 2em;
     margin-bottom: 5px;
 }
@@ -40,5 +40,5 @@
 }
 
 .fs-2 {
-    color: red;
+    color: rgb(200, 30, 30);
 }
