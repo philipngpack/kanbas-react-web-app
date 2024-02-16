@@ -5,7 +5,8 @@
         "number": "CS4550",
         "startDate": "2023-09-01",
         "endDate": "2023-12-31",
-        "image": "../../images/khoury.jpg"
+        "image": "../../images/khoury.jpg",
+        "termText": "Fall 2023 Semester Full Term"
     },
     {
         "_id": "CS4560",
@@ -13,7 +14,8 @@
         "number": "CS4560",
         "startDate": "2023-09-01",
         "endDate": "2023-12-31",
-        "image": "../../images/khoury.jpg"
+        "image": "../../images/khoury.jpg",
+        "termText": "Fall 2023 Semester Full Term"
     },
     {
         "_id": "CS4570",
@@ -21,7 +23,8 @@
         "number": "CS4570",
         "startDate": "2023-09-01",
         "endDate": "2023-12-31",
-        "image": "../../images/khoury.jpg"
+        "image": "../../images/khoury.jpg",
+        "termText": "Fall 2023 Semester Full Term"
     },
     {
         "_id": "CS4580",
@@ -29,15 +32,17 @@
         "number": "CS4580",
         "startDate": "2023-09-01",
         "endDate": "2023-12-31",
-        "image": "../../images/khoury.jpg"
+        "image": "../../images/khoury.jpg",
+        "termText": "Fall 2023 Semester Full Term"
     },
     {
         "_id": "CS4590",
-        "name": "Mobile App Development",
+        "name": "Mobile Development",
         "number": "CS4590",
         "startDate": "2023-09-01",
         "endDate": "2023-12-31",
-        "image": "../../images/khoury.jpg"
+        "image": "../../images/khoury.jpg",
+        "termText": "Fall 2023 Semester Full Term"
     },
     {
         "_id": "CS4600",
@@ -45,7 +50,8 @@
         "number": "CS4600",
         "startDate": "2023-09-01",
         "endDate": "2023-12-31",
-        "image": "../../images/khoury.jpg"
+        "image": "../../images/khoury.jpg",
+        "termText": "Fall 2023 Semester Full Term"
     },
     {
         "_id": "CS4610",
@@ -53,6 +59,7 @@
         "number": "CS4610",
         "startDate": "2023-09-01",
         "endDate": "2023-12-31",
-        "image": "../../images/khoury.jpg"
+        "image": "../../images/khoury.jpg",
+        "termText": "Fall 2023 Semester Full Term"
     }
 ]

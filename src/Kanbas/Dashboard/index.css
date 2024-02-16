@@ -1,0 +1,42 @@
+.card-img-top {
+    height: 150px;
+    width: 274px;
+    object-fit: cover;
+
+}
+
+.card {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 300px;
+
+}
+
+.card-title {
+    text-decoration: none;
+    color: darkslategray;
+    font-weight: bold;
+}
+
+.card-text {
+    color: grey;
+    font-size: 14px;
+    margin: 0;
+}
+
+.card-term-text {
+    color: grey;
+    font-size: 12px;
+}
+
+.card-img-top {
+    max-height: 150px
+}
+
+
+.icon-button {
+    font-size: 20px;
+    color: grey;
+    margin: -12px;
+}
