@@ -1,9 +1,13 @@
 import JavaScript from "./Javascript";
+import PathParameters from "./routing/PathParameters";
+import Classes from "./Classes";
 
 function Assignment3() {
     return (
         <div>
             <h1>Assignment 3</h1>
+            <Classes />
+            <PathParameters />
             <JavaScript />
         </div>
     );
