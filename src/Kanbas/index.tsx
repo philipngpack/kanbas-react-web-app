@@ -1,9 +1,10 @@
+import Nav from "../Nav";
 function Kanbas() {
-    return(
+    return (
         <div>
+            <Nav />
             <h1>Kanbas</h1>
         </div>
-    );
-};
-
-export default Kanbas;
+    )
+}
+export default Kanbas
