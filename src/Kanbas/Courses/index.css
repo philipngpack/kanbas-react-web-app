@@ -9,3 +9,14 @@
     color: rgb(200, 30, 30);
     font-size: 20px;
 }
+
+.course-title-greater {
+    color: grey;
+    margin: 0px 10px 0px 10px;
+}
+
+.course-title-path {
+    position: relative;
+    font-size: 22px;
+    top: -5px;
+}
