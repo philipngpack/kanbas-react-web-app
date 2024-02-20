@@ -1,8 +1,11 @@
 import ModuleList from "./List";
+import ModuleButtons from "./Buttons";
+
 function Modules() {
   return (
-    <div>
-      <h2>Modules</h2>
+    <div className="modules-fr">
+      <ModuleButtons />
+      <hr />
       <ModuleList />
     </div>
   );

@@ -1,3 +1,9 @@
+.modules-fr {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
 .wd-modules,
 .wd-modules * {
   border-radius: 0%;
@@ -8,6 +14,7 @@
 
 .wd-modules {
   margin: 5px;
+  width: 50vw; 
 }
 
 .wd-modules>li {
@@ -24,7 +31,7 @@
 .wd-modules>li>ul>li {
   padding: 5px;
   border-top: 1px solid gray !important;
-  border-left: 2px solid green;
+  border-left: 1px solid gray;
 }
 
 .wd-modules>li {
@@ -40,7 +47,7 @@
 }
 
 .button-select {
-  background-color: #fd0d51;
+  background-color: rgb(200, 30, 30);
   border: none;
   color: white;
 }
@@ -51,9 +58,37 @@
 }
 
 .red-link {
-  color: #fd0d51;
+  color: rgb(200, 30, 30);
 }
 
-.list-group-item {
-    width: 500px;
+.module-buttons {
+  display: flex;
+  margin: 0px 0px 10px 0px;
+  justify-content: flex-start;
+  white-space: nowrap;
 }
+
+.grey-button {
+  background-color: rgb(240, 240, 240);
+  color: black;
+  border: 1px solid lightgray;
+  padding: 5px 10px;
+  margin: 0px 2px;
+}
+
+.plus-module-button {
+  background-color: rgb(200, 30, 30);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin: 0px 2px;
+}
+
+.ellipsis-button {
+  background-color: rgb(240, 240, 240);
+  color: black;
+  border: 1px solid lightgray;
+  padding: 5px 10px;
+  margin: 0px 2px;
+}
+

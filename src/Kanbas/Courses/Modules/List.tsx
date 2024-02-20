@@ -9,7 +9,6 @@ function ModuleList() {
   const [selectedModule, setSelectedModule] = useState(modulesList[0]);
   return (
     <>
-      {/* <!-- Add buttons here --> */}
       <ul className="list-group wd-modules">
         {modulesList.map((module) => (
           <li
