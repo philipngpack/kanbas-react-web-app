@@ -3,7 +3,9 @@ import { Navigate, Route, Routes, useParams, useLocation } from "react-router-do
 import { HiMiniBars3 } from "react-icons/hi2";
 import CourseNavigation from "./Navigation";
 import Modules from "./Modules";
+import { FaGlasses } from "react-icons/fa";
 import "./index.css";
+import { FaG } from "react-icons/fa6";
 
 function Courses() {
     const { courseId } = useParams();
@@ -18,6 +20,11 @@ function Courses() {
                 <h3 className="course-title"><HiMiniBars3 className="minibar" /> &nbsp; {course?._id} {course?.name} </h3>
                 <div className="course-title-greater"> {">"} </div>
                 <div className="course-title-path"> {selectedPath} </div>
+            </div>
+            <div className="student-view">
+                <button className="btn btn-primary student-view-button">
+                    <FaGlasses /> Student View
+                </button>
             </div>
             <hr />
             <div className="term-text">{course?.termText}</div>

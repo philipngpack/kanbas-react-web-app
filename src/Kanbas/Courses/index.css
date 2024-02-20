@@ -1,7 +1,7 @@
 .minibar {
     margin: -5px 0px 0px 20px;
     color: rgb(200, 30, 30);
-    font-size: 30px;
+    font-size: 23px;
 }
 
 .course-title {
@@ -17,6 +17,18 @@
 
 .course-title-path {
     position: relative;
-    font-size: 22px;
-    top: -5px;
+    font-size: 18px;
+}
+
+.student-view-button {
+    background-color: rgb(240, 240, 240);
+    color: black;
+    border: 1px solid lightgray;
+    padding: 5px 10px;
+    margin: -35px 20px 0px 2px;
+}
+
+.student-view {
+    display: flex;
+    justify-content: flex-end;
 }
