@@ -93,3 +93,6 @@
   margin: 0px 2px;
 }
 
+.btn-primary:hover {
+  background-color: grey;
+}

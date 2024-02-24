@@ -4,6 +4,8 @@
     padding: 0px;
     margin: 0px;
     width: 80px;
+    position: relative;
+    height: 100vh;
 }
 
 .wd-kanbas-navigation li {
@@ -41,4 +43,11 @@
 
 .fs-2 {
     color: rgb(200, 30, 30);
+    width: 30px;
+    height: 30px;
+}
+
+.fs-1 {
+    width: 30px;
+    height: 30px;
 }

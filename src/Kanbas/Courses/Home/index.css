@@ -1,5 +1,6 @@
 .home-fr {
     display: flex;
+    max-width: 250px;
 }
 
 .course-status-button-group {
