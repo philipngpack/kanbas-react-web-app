@@ -1,0 +1,27 @@
+.home-fr {
+    display: flex;
+}
+
+.course-status-button-group {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+
+}
+
+.course-status-button {
+    width: 250px;
+    height: 40px;
+    text-align: left;
+
+    background-color: rgb(240, 240, 240);
+    color: black;
+    border: 1px solid lightgray;
+    padding: 5px 10px;
+    margin: 2px 2px;
+}
+
+.red-link {
+    color: rgb(200, 30, 30);
+    text-decoration: none;
+}

@@ -6,7 +6,33 @@
         "startDate": "2023-09-01",
         "endDate": "2023-12-31",
         "image": "../../images/khoury.jpg",
-        "termText": "Fall 2023 Semester Full Term"
+        "termText": "Fall 2023 Semester Full Term",
+        "events": [
+            {
+                "type": "Lecture",
+                "courseCode": "CS4550.12631.20410",
+                "date": "2023-09-07",
+                "time": "11:45am"
+            },
+            {
+                "type": "Assignment",
+                "courseCode": "CS4550.12631.20410",
+                "date": "2023-09-15",
+                "time": "11:59pm"
+            },
+            {
+                "type": "Exam",
+                "courseCode": "CS4550.12631.20410",
+                "date": "2023-12-10",
+                "time": "9am"
+            }
+        ],
+        "todo": {
+            "description": "Grade P1 - Build a React web app",
+            "points": 100,
+            "dueDate": "2023-09-18",
+            "dueTime": "11:59pm"
+        }
     },
     {
         "_id": "CS4560",
@@ -15,7 +41,33 @@
         "startDate": "2023-09-01",
         "endDate": "2023-12-31",
         "image": "../../images/khoury.jpg",
-        "termText": "Fall 2023 Semester Full Term"
+        "termText": "Fall 2023 Semester Full Term",
+        "events": [
+            {
+                "type": "Lecture",
+                "courseCode": "CS4560.12631.20410",
+                "date": "2023-09-07",
+                "time": "11:45am"
+            },
+            {
+                "type": "Assignment",
+                "courseCode": "CS4560.12631.20410",
+                "date": "2023-09-15",
+                "time": "11:59pm"
+            },
+            {
+                "type": "Exam",
+                "courseCode": "CS4560.12631.20410",
+                "date": "2023-12-10",
+                "time": "9am"
+            }
+        ],
+        "todo": {
+            "description": "Grade P1 - Design a database schema",
+            "points": 100,
+            "dueDate": "2023-09-18",
+            "dueTime": "11:59pm"
+        }
     },
     {
         "_id": "CS4570",
@@ -24,7 +76,33 @@
         "startDate": "2023-09-01",
         "endDate": "2023-12-31",
         "image": "../../images/khoury.jpg",
-        "termText": "Fall 2023 Semester Full Term"
+        "termText": "Fall 2023 Semester Full Term",
+        "events": [
+            {
+                "type": "Lecture",
+                "courseCode": "CS4570.12631.20410",
+                "date": "2023-09-07",
+                "time": "11:45am"
+            },
+            {
+                "type": "Assignment",
+                "courseCode": "CS4570.12631.20410",
+                "date": "2023-09-15",
+                "time": "11:59pm"
+            },
+            {
+                "type": "Exam",
+                "courseCode": "CS4570.12631.20410",
+                "date": "2023-12-10",
+                "time": "9am"
+            }
+        ],
+        "todo": {
+            "description": "Grade P1 - Implement software requirements",
+            "points": 100,
+            "dueDate": "2023-09-18",
+            "dueTime": "11:59pm"
+        }
     },
     {
         "_id": "CS4580",
@@ -33,7 +111,33 @@
         "startDate": "2023-09-01",
         "endDate": "2023-12-31",
         "image": "../../images/khoury.jpg",
-        "termText": "Fall 2023 Semester Full Term"
+        "termText": "Fall 2023 Semester Full Term",
+        "events": [
+            {
+                "type": "Lecture",
+                "courseCode": "CS4580.12631.20410",
+                "date": "2023-09-07",
+                "time": "11:45am"
+            },
+            {
+                "type": "Assignment",
+                "courseCode": "CS4580.12631.20410",
+                "date": "2023-09-15",
+                "time": "11:59pm"
+            },
+            {
+                "type": "Exam",
+                "courseCode": "CS4580.12631.20410",
+                "date": "2023-12-10",
+                "time": "9am"
+            }
+        ],
+        "todo": {
+            "description": "Grade P1 - Implement AI algorithms",
+            "points": 100,
+            "dueDate": "2023-09-18",
+            "dueTime": "11:59pm"
+        }
     },
     {
         "_id": "CS4590",
@@ -42,7 +146,33 @@
         "startDate": "2023-09-01",
         "endDate": "2023-12-31",
         "image": "../../images/khoury.jpg",
-        "termText": "Fall 2023 Semester Full Term"
+        "termText": "Fall 2023 Semester Full Term",
+        "events": [
+            {
+                "type": "Lecture",
+                "courseCode": "CS4590.12631.20410",
+                "date": "2023-09-07",
+                "time": "11:45am"
+            },
+            {
+                "type": "Assignment",
+                "courseCode": "CS4590.12631.20410",
+                "date": "2023-09-15",
+                "time": "11:59pm"
+            },
+            {
+                "type": "Exam",
+                "courseCode": "CS4590.12631.20410",
+                "date": "2023-12-10",
+                "time": "9am"
+            }
+        ],
+        "todo": {
+            "description": "Grade P1 - Develop a mobile app",
+            "points": 100,
+            "dueDate": "2023-09-18",
+            "dueTime": "11:59pm"
+        }
     },
     {
         "_id": "CS4600",
@@ -51,7 +181,33 @@
         "startDate": "2023-09-01",
         "endDate": "2023-12-31",
         "image": "../../images/khoury.jpg",
-        "termText": "Fall 2023 Semester Full Term"
+        "termText": "Fall 2023 Semester Full Term",
+        "events": [
+            {
+                "type": "Lecture",
+                "courseCode": "CS4600.12631.20410",
+                "date": "2023-09-07",
+                "time": "11:45am"
+            },
+            {
+                "type": "Assignment",
+                "courseCode": "CS4600.12631.20410",
+                "date": "2023-09-15",
+                "time": "11:59pm"
+            },
+            {
+                "type": "Exam",
+                "courseCode": "CS4600.12631.20410",
+                "date": "2023-12-10",
+                "time": "9am"
+            }
+        ],
+        "todo": {
+            "description": "Grade P1 - Implement OS functionalities",
+            "points": 100,
+            "dueDate": "2023-09-18",
+            "dueTime": "11:59pm"
+        }
     },
     {
         "_id": "CS4610",
@@ -60,6 +216,32 @@
         "startDate": "2023-09-01",
         "endDate": "2023-12-31",
         "image": "../../images/khoury.jpg",
-        "termText": "Fall 2023 Semester Full Term"
+        "termText": "Fall 2023 Semester Full Term",
+        "events": [
+            {
+                "type": "Lecture",
+                "courseCode": "CS4610.12631.20410",
+                "date": "2023-09-07",
+                "time": "11:45am"
+            },
+            {
+                "type": "Assignment",
+                "courseCode": "CS4610.12631.20410",
+                "date": "2023-09-15",
+                "time": "11:59pm"
+            },
+            {
+                "type": "Exam",
+                "courseCode": "CS4610.12631.20410",
+                "date": "2023-12-10",
+                "time": "9am"
+            }
+        ],
+        "todo": {
+            "description": "Grade P1 - Configure network protocols",
+            "points": 100,
+            "dueDate": "2023-09-18",
+            "dueTime": "11:59pm"
+        }
     }
 ]
