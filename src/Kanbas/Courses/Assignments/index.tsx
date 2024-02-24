@@ -1,13 +1,17 @@
 import { FaCheckCircle, FaEllipsisV, FaPlusCircle } from "react-icons/fa";
 import { Link, useParams } from "react-router-dom";
 import { assignments } from "../../Database";
+import "./index.css";
+import AssignmentButtons from "./AssignmentButtons";
+
 function Assignments() {
   const { courseId } = useParams();
   const assignmentList = assignments.filter(
     (assignment) => assignment.course === courseId);
   return (
     <>
-      
+
+    <AssignmentButtons />
       <ul className="list-group wd-modules">
         <li className="list-group-item">
           <div>
@@ -29,6 +33,7 @@ function Assignments() {
           </ul>
         </li>
       </ul>
+
     </>
 );}
 export default Assignments;
