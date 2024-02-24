@@ -1,4 +1,7 @@
 import { FaBars, FaChevronDown, FaTachometerAlt, FaUserCircle, FaBook, FaCalendar, FaInbox, FaDesktop, FaShareSquare, FaHistory, FaQuestionCircle, FaHome, FaList, FaComments, FaCamera, FaFileCode, FaQuestion, FaStickyNote, FaUsers, FaFolder, FaCheckSquare, FaChartLine, FaFileExport, FaChartBar, FaCog, FaBullhorn, FaFile } from "react-icons/fa";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+
+
 
 function MobileView() {
     const kanbasNavItems = [
@@ -51,7 +54,7 @@ function MobileView() {
 
             <div className="collapse" id="kanbas-nav-collapse">
                 <div className="card card-body">
-                    <button type="button" className="btn btn-close" data-bs-toggle="collapse" style={{ position: "absolute", top: 5, right: 5 }} data-bs-target="#kanbas-nav-collapse" aria-label="Close"></button>
+                    <button type="button" className="btn btn-close " data-bs-toggle="collapse" style={{ position: "absolute", top: 5, right: 5 }} data-bs-target="#kanbas-nav-collapse" aria-label="Close"></button>
                     <ul className="wd-navbar">
                         {kanbasNavItems.map((item, index) => (
                             <li key={index}>
@@ -61,13 +64,14 @@ function MobileView() {
                             </li>
                         ))}
                     </ul>
+
                 </div>
             </div>
 
             <div className="collapse" id="course-nav-collapse">
                 <div className="card card-body">
                     <button type="button" className="btn btn-close" data-bs-toggle="collapse" style={{ position: "absolute", top: 5, right: 5 }} data-bs-target="#course-nav-collapse" aria-label="Close"></button>
-                    <ul className="wd-course-navbar">
+                    <ul className="wd-navbar">
                         {courseNavItems.map((item, index) => (
                             <li key={index}>
                                 <a href={item.href} className="red-link">

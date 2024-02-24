@@ -32,3 +32,11 @@
     display: flex;
     justify-content: flex-end;
 }
+
+.wd-navbar {
+    list-style: none;
+}
+
+.card-body {
+    max-width: 800px;
+}

@@ -31,7 +31,11 @@ function Courses() {
     return (
 
         <div>
-            {isMobile ? <MobileView /> :
+            {isMobile ?
+                <div className="mobile-view">
+                    <MobileView />
+                </div>
+                :
                 <div>
                     <br />
                     <div style={{ display: "flex" }}>
@@ -60,9 +64,7 @@ function Courses() {
                             </Routes>
                         </div>
                     </div>
-
                 </div>
-
             }
         </div>
 
