@@ -1,6 +1,5 @@
 import { FaBars, FaChevronDown, FaTachometerAlt, FaUserCircle, FaBook, FaCalendar, FaInbox, FaDesktop, FaShareSquare, FaHistory, FaQuestionCircle, FaHome, FaList, FaComments, FaCamera, FaFileCode, FaQuestion, FaStickyNote, FaUsers, FaFolder, FaCheckSquare, FaChartLine, FaFileExport, FaChartBar, FaCog, FaBullhorn, FaFile } from "react-icons/fa";
 import { Link, useLocation, useParams } from "react-router-dom";
-import  { courses } from "../../Kanbas/Database";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 interface LinkItem {
