@@ -35,7 +35,9 @@ function Courses() {
             {isMobile ?
                 <div className="mobile-view">
                     <MobileView />
-                    <Modules />
+                    {selectedPath === "Modules" && <Modules />}
+                    {selectedPath === "Home" && <Home />}
+                    {selectedPath === "Assignments" && <Assignments />}
                 </div>
                 :
                 <div>

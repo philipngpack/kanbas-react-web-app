@@ -1,4 +1,4 @@
-import { FaEllipsisV, FaCheckCircle } from 'react-icons/fa';
+import { FaEllipsisV } from 'react-icons/fa';
 
 function AssignmentButtons() {
     return (
