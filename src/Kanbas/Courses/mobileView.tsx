@@ -1,41 +1,50 @@
 import { FaBars, FaChevronDown, FaTachometerAlt, FaUserCircle, FaBook, FaCalendar, FaInbox, FaDesktop, FaShareSquare, FaHistory, FaQuestionCircle, FaHome, FaList, FaComments, FaCamera, FaFileCode, FaQuestion, FaStickyNote, FaUsers, FaFolder, FaCheckSquare, FaChartLine, FaFileExport, FaChartBar, FaCog, FaBullhorn, FaFile } from "react-icons/fa";
+import { Link, useLocation, useParams } from "react-router-dom";
+import  { courses } from "../../Kanbas/Database";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
-
+interface LinkItem {
+    label: string;
+    icon: JSX.Element;
+}
 
 function MobileView() {
-    const kanbasNavItems = [
-        { href: "/Kanbas/Dashboard/screen.html", icon: <FaTachometerAlt className="kanbas-navbar-icon" />, text: "Dashboard" },
-        { href: "/Kanbas/Account/Profile/screen.html", icon: <FaUserCircle />, text: "Account" },
-        { href: "/Kanbas/Courses/Home/screen.html", icon: <FaBook />, text: "Courses" },
-        { href: "#", icon: <FaCalendar />, text: "Calendar" },
-        { href: "#", icon: <FaInbox />, text: "Inbox" },
-        { href: "#", icon: <FaDesktop />, text: "Studio" },
-        { href: "#", icon: <FaShareSquare />, text: "Commons" },
-        { href: "#", icon: <FaHistory />, text: "History" },
-        { href: "#", icon: <FaQuestionCircle />, text: "Help" },
+    const location = useLocation();
+    const { courseId } = useParams();
+    const pathname = location.pathname;
+
+    const kanbasNavItems: LinkItem[] = [
+        { label: "Dashboard", icon: <FaTachometerAlt className="kanbas-navbar-icon" /> },
+        { label: "Account", icon: <FaUserCircle /> },
+        { label: "Courses", icon: <FaBook /> },
+        { label: "Calendar", icon: <FaCalendar /> },
+        { label: "Inbox", icon: <FaInbox /> },
+        { label: "Studio", icon: <FaDesktop /> },
+        { label: "Commons", icon: <FaShareSquare /> },
+        { label: "History", icon: <FaHistory /> },
+        { label: "Help", icon: <FaQuestionCircle /> },
     ];
 
-    const courseNavItems = [
-        { href: "/Kanbas/Courses/Home/screen.html", icon: <FaHome />, text: "Home" },
-        { href: "/Kanbas/Courses/Modules/screen.html", icon: <FaList />, text: "Modules" },
-        { href: "https://piazza.com/class/lqlwl9wn2q969r", icon: <FaComments />, text: "Piazza" },
-        { href: "#", icon: <FaCamera />, text: "Zoom Meetings" },
-        { href: "/Kanbas/Courses/Assignments/screen.html", icon: <FaFileCode />, text: "Assignments" },
-        { href: "#", icon: <FaQuestion />, text: "Quizzes" },
-        { href: "/Kanbas/Courses/Grades/screen.html", icon: <FaStickyNote />, text: "Grades" },
-        { href: "#", icon: <FaUsers />, text: "People" },
-        { href: "#", icon: <FaCamera />, text: "Panopto Video" },
-        { href: "#", icon: <FaComments />, text: "Discussions" },
-        { href: "#", icon: <FaBullhorn />, text: "Announcements" },
-        { href: "#", icon: <FaFile />, text: "Pages" },
-        { href: "#", icon: <FaFolder />, text: "Files" },
-        { href: "#", icon: <FaCheckSquare />, text: "Rubrics" },
-        { href: "#", icon: <FaChartLine />, text: "Outcomes" },
-        { href: "#", icon: <FaUsers />, text: "Collaborations" },
-        { href: "#", icon: <FaFileExport />, text: "Syllabus" },
-        { href: "#", icon: <FaChartBar />, text: "Progress Reports" },
-        { href: "#", icon: <FaCog />, text: "Settings" },
+    const courseNavItems: LinkItem[] = [
+        { label: "Home", icon: <FaHome /> },
+        { label: "Modules", icon: <FaList /> },
+        { label: "Piazza", icon: <FaComments /> },
+        { label: "Zoom Meetings", icon: <FaCamera /> },
+        { label: "Assignments", icon: <FaFileCode /> },
+        { label: "Quizzes", icon: <FaQuestion /> },
+        { label: "Grades", icon: <FaStickyNote /> },
+        { label: "People", icon: <FaUsers /> },
+        { label: "Panopto Video", icon: <FaCamera /> },
+        { label: "Discussions", icon: <FaComments /> },
+        { label: "Announcements", icon: <FaBullhorn /> },
+        { label: "Pages", icon: <FaFile /> },
+        { label: "Files", icon: <FaFolder /> },
+        { label: "Rubrics", icon: <FaCheckSquare /> },
+        { label: "Outcomes", icon: <FaChartLine /> },
+        { label: "Collaborations", icon: <FaUsers /> },
+        { label: "Syllabus", icon: <FaFileExport /> },
+        { label: "Progress Reports", icon: <FaChartBar /> },
+        { label: "Settings", icon: <FaCog /> },
     ];
 
     return (
@@ -45,7 +54,7 @@ function MobileView() {
                     <button type="button" className="btn text-white" data-bs-toggle="collapse" data-bs-target="#kanbas-nav-collapse">
                         <FaBars />
                     </button>
-                    <span>CS4550.12631.202410</span>
+                    <span>{courseId}.12631.20241</span>
                     <button type="button" className="btn text-white" data-bs-toggle="collapse" data-bs-target="#course-nav-collapse">
                         <FaChevronDown />
                     </button>
@@ -57,10 +66,10 @@ function MobileView() {
                     <button type="button" className="btn btn-close " data-bs-toggle="collapse" style={{ position: "absolute", top: 5, right: 5 }} data-bs-target="#kanbas-nav-collapse" aria-label="Close"></button>
                     <ul className="wd-navbar">
                         {kanbasNavItems.map((item, index) => (
-                            <li key={index}>
-                                <a href={item.href} className="red-link">
-                                    {item.icon} {item.text}
-                                </a>
+                            <li key={index} className={pathname.includes(item.label) ? "wd-active" : ""}>
+                                <Link to={`/Kanbas/${item.label}`} className="red-link">
+                                    {item.icon} {item.label}
+                                </Link>
                             </li>
                         ))}
                     </ul>
@@ -73,10 +82,10 @@ function MobileView() {
                     <button type="button" className="btn btn-close" data-bs-toggle="collapse" style={{ position: "absolute", top: 5, right: 5 }} data-bs-target="#course-nav-collapse" aria-label="Close"></button>
                     <ul className="wd-navbar">
                         {courseNavItems.map((item, index) => (
-                            <li key={index}>
-                                <a href={item.href} className="red-link">
-                                    {item.icon} {item.text}
-                                </a>
+                            <li key={index} className={pathname.includes(item.label) ? "wd-active" : ""}>
+                                <Link to={`/Kanbas/Courses/${courseId}/${item.label}`} className="red-link">
+                                    {item.icon} {item.label}
+                                </Link>
                             </li>
                         ))}
                     </ul>
