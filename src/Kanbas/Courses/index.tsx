@@ -34,6 +34,7 @@ function Courses() {
             {isMobile ?
                 <div className="mobile-view">
                     <MobileView />
+                    <Modules />
                 </div>
                 :
                 <div>
