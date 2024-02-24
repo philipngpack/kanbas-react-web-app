@@ -13,7 +13,9 @@ function Kanbas() {
                     <Route path="Account" element={<h1>&nbsp; Account</h1>} />
                     <Route path="Dashboard" element={<Dashboard />} />
                     <Route path="Courses/:courseId/*" element={<Courses />} />
+                    <Route path="Courses" element={<Navigate to="CS4550/Home" />} />
                 </Routes>
+                
             </div>
         </div>
     );
