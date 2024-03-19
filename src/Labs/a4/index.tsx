@@ -5,6 +5,10 @@ import PassingFunctions from "./PassingFunctions";
 import EventObject from "./EventObject";
 import Counter from "./Counter";
 import BooleanStateVariables from "./BooleanStateVariables";
+import StringStateVariables from "./StringStateVariables";
+import DateStateVariable from "./DateStateVariable";
+import ObjectStateVariable from "./ObjectStateVariable";
+import ArrayStateVariable from "./ArrayStateVariable";
 
 const Assignment4 = () => {
     function sayHello() {
@@ -19,6 +23,10 @@ const Assignment4 = () => {
             <EventObject />
             <Counter />
             <BooleanStateVariables />
+            <StringStateVariables />
+            <DateStateVariable />
+            <ObjectStateVariable />
+            <ArrayStateVariable />
 
         </>
     );
