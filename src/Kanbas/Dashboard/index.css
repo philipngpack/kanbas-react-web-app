@@ -40,3 +40,21 @@
     color: grey;
     margin: -12px;
 }
+
+.card-buttons {
+    display: flex;
+    gap: 4px;
+    margin: 3px 0px 0px -3px;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    max-width: fit-content;
+    gap: 10px;
+}
+
+.form-buttons {
+    display: flex;
+    flex-direction: row;
+}
