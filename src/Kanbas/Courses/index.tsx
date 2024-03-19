@@ -1,4 +1,3 @@
-import { courses } from "../../Kanbas/Database";
 import { Navigate, Route, Routes, useParams, useLocation } from "react-router-dom";
 import { HiMiniBars3 } from "react-icons/hi2";
 import CourseNavigation from "./Navigation";
@@ -10,7 +9,7 @@ import Home from "./Home";
 import { useEffect, useState } from "react";
 import Assignments from "./Assignments";
 
-function Courses() {
+function Courses({ courses }: { courses: any[]; }) {
     const { courseId } = useParams();
     const course = courses.find((course) => course._id === courseId);
     const location = useLocation();
@@ -29,8 +28,11 @@ function Courses() {
         };
     }, []);
 
-    return (
+    if (!course) {
+        return <h3> Content for this course has not yet been created </h3>;
+    }
 
+    return (
         <div>
             {isMobile ?
                 <div className="mobile-view">
@@ -71,7 +73,6 @@ function Courses() {
                 </div>
             }
         </div>
-
     );
 }
 

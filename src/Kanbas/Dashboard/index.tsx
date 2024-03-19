@@ -1,52 +1,16 @@
-import React, { useState } from "react";
 import "./index.css";
 import { Link } from "react-router-dom";
-import { courses } from "../Database";
 import { FaFile, FaFilePen, FaTrash } from "react-icons/fa6";
 
-function Dashboard() {
-    const [coursesState, setCourses] = useState(courses);
-    const [course, setCourse] = useState({
-        _id: "1200",
-        name: "Course Name",
-        number: "Course Number",
-        startDate: "2024-01-08",
-        endDate: "2024-04-28",
-        image: "../../images/khoury.jpg",
-    });
-
-    const addNewCourse = () => {
-        const newCourse = {
-            ...course,
-            _id: new Date().getTime().toString(),
-            termText: "Spring 2024 Semester Full Term",
-            events: [],
-            todo: { description: "", points: 0, dueDate: "", dueTime: "" }
-        };
-        setCourses([...courses, newCourse]);
-    };
-
-    const deleteCourse = (courseId: string) => {
-        setCourses(coursesState.filter((course) => course._id !== courseId));
-    };
-
-    const updateCourse = () => {
-        setCourses(
-            courses.map((c) => {
-                if (c._id === course._id) {
-                    return {
-                        ...course,
-                        termText: c.termText,
-                        events: c.events,
-                        todo: c.todo
-                    };
-                } else {
-                    return c;
-                }
-            })
-        );
-    };
-
+function Dashboard({ coursesState, course, setCourse, addNewCourse, deleteCourse, updateCourse }: {
+    coursesState: any[];
+    course: any;
+    setCourse: (course: any) => void;
+    addNewCourse: () => void;
+    deleteCourse: (course: any) => void;
+    updateCourse: () => void;
+}
+) {
     return (
         <div className="p-4">
             <h1>Dashboard</h1>
@@ -122,13 +86,11 @@ function Dashboard() {
                     onChange={(e) => setCourse({ ...course, endDate: e.target.value })}
                 />
                 <div className="form-buttons">
-                <button className="btn btn-primary grey-button" onClick={addNewCourse}>Add</button>
-                <button className="btn btn-primary grey-button" onClick={updateCourse}>Update</button>
+                    <button className="btn btn-primary grey-button" onClick={addNewCourse}>Add</button>
+                    <button className="btn btn-primary grey-button" onClick={updateCourse}>Update</button>
                 </div>
             </div>
-            
         </div>
-        
     );
 }
 
