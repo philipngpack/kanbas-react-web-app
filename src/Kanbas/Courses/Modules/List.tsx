@@ -11,20 +11,18 @@ import {
 } from "./reducer";
 import { KanbasState } from "../../store";
 
-
 function ModuleList() {
   const { courseId } = useParams();
-  const moduleList = useSelector((state: KanbasState) => 
-  state.modulesReducer.modules);
+  const moduleList = useSelector((state: KanbasState) => state.modulesReducer.modules);
+  const module = useSelector((state: KanbasState) => state.modulesReducer.module);
 
-  const module = useSelector((state: KanbasState) => 
-    state.modulesReducer.module);
   const dispatch = useDispatch();
+
   return (
     <>
       <ul className="list-group wd-modules">
         {moduleList.filter((module) => module.course === courseId).map((module) => (
-          <li className="list-group-item" key={module._id} onClick={() => setModule(module)}>
+          <li className="list-group-item" key={module._id}>
             <div>
               <FaEllipsisV className="me-2" />
               <span>{module.name}</span>
@@ -38,7 +36,7 @@ function ModuleList() {
                     <FaTrash />
                   </button>
                   
-                  <button className="btn icon-button" onClick={() => dispatch(updateModule(module._id))}>
+                  <button className="btn icon-button" onClick={() => dispatch(setModule(module))}>
                     <FaFilePen />
                   </button>
                 </div>
