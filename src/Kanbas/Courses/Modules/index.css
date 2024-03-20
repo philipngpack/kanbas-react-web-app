@@ -96,3 +96,15 @@
 .btn-primary:hover {
   background-color: grey;
 }
+
+.new-modules-box {
+  display: flex;
+  flex-direction: column;  
+  width: fit-content;
+  gap: 5px;
+}
+
+.module-edit-buttons {
+  display: flex;
+  gap: 5px;
+}
