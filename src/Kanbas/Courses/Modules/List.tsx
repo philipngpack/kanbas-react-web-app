@@ -1,47 +1,29 @@
-import React, { useState } from "react";
 import "./index.css";
-import { modules } from "../../Database";
 import { FaEllipsisV, FaCheckCircle, FaPlusCircle } from "react-icons/fa";
 import { useParams } from "react-router";
 import { FaFilePen, FaTrash } from "react-icons/fa6";
+import { useSelector, useDispatch } from "react-redux";
+import {
+  addModule,
+  deleteModule,
+  updateModule,
+  setModule,
+} from "./reducer";
+import { KanbasState } from "../../store";
 
 
 function ModuleList() {
   const { courseId } = useParams();
-  const [moduleList, setModuleList] = useState<any[]>(modules.filter((module) => module.course === courseId));
-  const [module, setModule] = useState({
-    name: "New Module",
-    description: "New Description",
-    course: courseId,
-    _id: new Date().getTime().toString(),
-  });
+  const moduleList = useSelector((state: KanbasState) => 
+  state.modulesReducer.modules);
 
-  const addModule = () => {
-    const newModule = { ...module, _id: new Date().getTime().toString() };
-    const newModuleList = [newModule, ...moduleList];
-    setModuleList(newModuleList);
-  };
-
-  const deleteModule = (moduleId: string) => {
-    const newModuleList = moduleList.filter((module) => module._id !== moduleId);
-    setModuleList(newModuleList);
-  };
-
-  const updateModule = () => {
-    const newModuleList = moduleList.map((m) => {
-      if (m._id === module._id) {
-        return module;
-      } else {
-        return m;
-      }
-    });
-    setModuleList(newModuleList);
-  };
-
+  const module = useSelector((state: KanbasState) => 
+    state.modulesReducer.module);
+  const dispatch = useDispatch();
   return (
     <>
       <ul className="list-group wd-modules">
-        {moduleList.map((module) => (
+        {moduleList.filter((module) => module.course === courseId).map((module) => (
           <li className="list-group-item" key={module._id} onClick={() => setModule(module)}>
             <div>
               <FaEllipsisV className="me-2" />
@@ -52,17 +34,11 @@ function ModuleList() {
                   <button> {<FaCheckCircle className="text-success" />}</button>
                   <button> {<FaPlusCircle />} </button>
                   <button> {<FaEllipsisV />} </button>
-                  <button className="btn icon-button" onClick={(event) => {
-                    event.preventDefault();
-                    deleteModule(module._id);
-                  }}>
+                  <button className="btn icon-button" onClick={() => dispatch(deleteModule(module._id))}>
                     <FaTrash />
                   </button>
                   
-                  <button className="btn icon-button" onClick={(event) => {
-                    event.preventDefault();
-                    updateModule();
-                  }}>
+                  <button className="btn icon-button" onClick={() => dispatch(updateModule(module._id))}>
                     <FaFilePen />
                   </button>
                 </div>
@@ -90,14 +66,14 @@ function ModuleList() {
       <li className="new-modules-box">
         <input
           value={module.name}
-          onChange={(e) => setModule({ ...module, name: e.target.value })}
+          onChange={(e) => dispatch(setModule({ ...module, name: e.target.value }))}
         />
         <textarea
           value={module.description}
-          onChange={(e) => setModule({ ...module, description: e.target.value })}
+          onChange={(e) => dispatch(setModule({ ...module, description: e.target.value }))}
         />
-        <button className="btn btn-primary grey-button" onClick={addModule}>Add</button>
-        <button className="btn btn-primary grey-button" onClick={updateModule}>Update</button>
+        <button className="btn btn-primary grey-button" onClick={() => dispatch(addModule({ ...module, course: courseId }))}>Add</button>
+        <button className="btn btn-primary grey-button" onClick={() => dispatch(updateModule(module))}>Update</button>
       </li>
     </>
   );
